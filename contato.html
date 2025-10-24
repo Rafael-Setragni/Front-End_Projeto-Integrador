@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT-56</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,9 +30,9 @@
                     </div>
                 </div>    
                 <div class="formulario">
-                    <form>
+                    <form id="formContato">
                         <p>Nome:</p>
-                        <input type="text" placeholder="Nome Completo" required>
+                        <input type="text" placeholder="Nome Completo" id="nomeUsuario" required>
                         <p>Telefone:</p>
                         <input type="tel" placeholder="Telefone" required>
                         <p>E-mail:</p>
@@ -40,13 +41,17 @@
                         <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
                         <button type="submit">ENVIAR</button>
                     </form>
+                    
                 </div>
+                
             </div>
+            
         </section>
+        <div id="caixaMensagem"></div>
     </main>
     <footer>
         <p>© 2025 Centro de Treinamento 56 — Todos os direitos reservados.</p>
-        <p>Fale conosc: ctarena56@gmail.com</p>
+        <p>Fale conosco: ctarena56@gmail.com</p>
     </footer>
 </body>
 </html>
