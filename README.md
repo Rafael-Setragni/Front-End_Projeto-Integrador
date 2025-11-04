@@ -71,3 +71,6 @@ Fora utilizados dois ícones do whatsapp e instagram no footer para garantir ace
 O layout geral da pagina foi definida com base em pesquisas e inspirações com outros sites de academia.
 
 Próximos passos: Adicionar novas paginas(como a pagina de matricula e pagamento), dedicar mais tempo a acessibilidade e responsividade com uso de media cares e detalhamento das paginas que já possuímos.
+
+Utilizamos o JavaScript para tornar possível a interação do usuário com o site. Nele, criamos um carrossel de imagens na página Home, uma mensagem de êxito quando o usuário completa o cadastro e também uma imagem que muda conforme o sexo escolhido pelo usuário.
+A interação mais interessante de criar foi a mensagem que aparece ao concluir o cadastro, pois foi possível fazer uso de uma div que só é exibida no site quando a ação é finalizada.Foi possível aprender que o DOM permite manipular dinamicamente os elementos da página, tornando o site mais interativo e responsivo às ações do usuário.

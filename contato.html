@@ -39,6 +39,23 @@
                         <input type="email" placeholder="E-mail" required>
                         <p>Objetivo:</p>
                         <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                        <div class="campo-sexo">
+                            <p>Sexo:</p>
+                            <div class="opcoes-sexo">
+                                <label class="opcao">
+                                <input type="radio" name="sexo" value="masculino" required>
+                                <p>Masculino</p>
+                                </label>
+
+                                <label class="opcao">
+                                <input type="radio" name="sexo" value="feminino">
+                                <p>Feminino</p>
+                                </label>
+                            </div>
+
+                            <div id="icone-sexo" class="icone-sexo"></div>
+                        </div>
+
                         <button type="submit">ENVIAR</button>
                     </form>
                     
@@ -48,6 +65,7 @@
             
         </section>
         <div id="caixaMensagem"></div>
+        <script src="scriptsexo.js"></script>
     </main>
     <footer>
         <p>© 2025 Centro de Treinamento 56 — Todos os direitos reservados.</p>

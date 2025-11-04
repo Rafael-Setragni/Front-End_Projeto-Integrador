@@ -335,6 +335,38 @@ button.proximo { right: 20px; }
   background-color: black;
   transform: scale(1.05);
 }
+
+.campo-sexo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.opcoes-sexo {
+  display: flex;
+  gap: 30px;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.opcao input[type="radio"] {
+  transform: scale(1.8);
+  margin-right: 5px;
+  accent-color: white;
+}
+
+.icone-sexo {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /*---------- script contato ----------*/
 #caixaMensagem {
   display: none;
