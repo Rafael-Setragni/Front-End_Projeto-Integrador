@@ -1,0 +1,49 @@
+// texto informativo e formulário de contato
+<section class="contato">
+    <h2>Na CT Arena 56, acreditamos que o primeiro passo é o mais importante — e ele começa aqui.<br>Preencha o
+        formulário abaixo e nossa equipe entrará em contato para entender seus objetivos<br> e ajudar você a começar sua
+        jornada com saúde, foco e motivação.</h2>
+    <h2>Estamos prontos pra te receber na Arena!</h2>
+    <div class="conteiner-contato">
+        <div class="imagem-com-texto">
+            <img src="img/img-contato.jpeg" alt="img-formulario">
+            <div class="texto-sobre-img">
+                <h3>MATRICULA</h3>
+            </div>
+        </div>
+        <div class="formulario">
+            <form id="formContato">
+                <p>Nome:</p>
+                <input type="text" placeholder="Nome Completo" id="nomeUsuario" required>
+                <p>Telefone:</p>
+                <input type="tel" placeholder="Telefone" required>
+                <p>E-mail:</p>
+                <input type="email" placeholder="E-mail" required>
+                <p>Objetivo:</p>
+                <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                <div class="campo-sexo">
+                    <p>Sexo:</p>
+                    <div class="opcoes-sexo">
+                        <label class="opcao">
+                            <input type="radio" name="sexo" value="masculino" required>
+                            <p>Masculino</p>
+                        </label>
+
+                        <label class="opcao">
+                            <input type="radio" name="sexo" value="feminino">
+                            <p>Feminino</p>
+                        </label>
+                    </div>
+
+                    <div id="icone-sexo" class="icone-sexo"></div>
+                </div>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="caixaMensagem"></div>
