@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT-56</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
     <main>
         <section class="sobre">
             <div class="img-sobre">
@@ -26,26 +20,28 @@
                 <img src="img/image-sobre-4.jpeg" alt="image-sobre-4">
             </div>
             <p>A CT Arena 56 nasceu com um propósito simples: transformar vidas através do movimento.</p>
-            <p>Tudo começou como um pequeno espaço de treino de bairro, criado por pessoas<br> apaixonadas por esporte e bem-estar. Com dedicação e energia, a Arena se tornou um<br> ponto de encontro para quem busca saúde, superação e comunidade.</p>
-            <p>Aqui, cada treino é uma conquista, cada aluno faz parte da nossa história e cada gota de<br> suor é motivo de orgulho.</p>
-            <p>Mais do que uma academia, somos uma família unida por objetivos, força e amizade.<br>Na CT Arena 56, o que nos move é ver você alcançar o seu melhor — dentro e fora do<br> treino.</p>
+            <p>Tudo começou como um pequeno espaço de treino de bairro, criado por pessoas<br> apaixonadas por esporteebem-estar. Com dedicação e energia, a Arena se tornou um<br> ponto de encontro para quem busca saúde,superaçãoe comunidade.</p>
+            <p>Aqui, cada treino é uma conquista, cada aluno faz parte da nossa história e cada gota de<br> suor émotivo deorgulho.</p>
+            <p>Mais do que uma academia, somos uma família unida por objetivos, força e amizade.<br>Na CT Arena 56, oque nosmove é ver você alcançar o seu melhor — dentro e fora do<br> treino.</p>
         </section>
-
         <section class="localizacao">
             <h2>Onde Estamos</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.5711089193064!2d-48.278828999999995!3d-15.720898700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb96d8a91c347%3A0x6b032d9b92bc4c71!2sCT%20ARENA%2056!5e0!3m2!1spt-BR!2sbr!4v1763328059944!5m2!1spt-BR!2sbr" 
-                class="infame"
-                style="border:0;"
-                allowfullscreen="" 
-                loading="lazy" 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.5711089193064!2d-48.278828999999995!3d-15.720898700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb96d8a91c347%3A0x6b032d9b92bc4c71!2sCT%20ARENA%2056!5e0!3m2!1spt-BR!2sbr!4v1763328059944!5m2!1spt-BR!2sbr"
+                class="infame" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
     </main>
-    <footer>
-        <p>© 2025 Centro de Treinamento 56 — Todos os direitos reservados.</p>
-        <p>Fale conosco: ctarena56@gmail.com</p>
-    </footer>
+    <div id="footer-container"></div>
+
+    <script src="js/componentes.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            carregarComponente('componentes/header.html', '#header-container');
+            carregarComponente('componentes/footer.html', '#footer-container');
+        });
+    </script>
 </body>
+
 </html>

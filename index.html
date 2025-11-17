@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT-56</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scriptCarrosel.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/scriptCarrosel.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
     <main>
         <div class="carrossel" id="carrossel">
             <div class="slides" id="slides">
@@ -67,9 +61,15 @@
             </div>
         </section>
     </main>
-    <footer>
-         <p>© 2025 Centro de Treinamento 56 — Todos os direitos reservados.</p>
-        <p>Fale conosco: ctarena56@gmail.com</p>
-    </footer>
+    <div id="footer-container"></div>
+
+    <script src="js/componentes.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            carregarComponente('componentes/header.html', '#header-container');
+            carregarComponente('componentes/footer.html', '#footer-container');
+        });
+    </script>
 </body>
+
 </html>
