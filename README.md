@@ -122,3 +122,8 @@ Instruções de como rodar o projeto localmente:
     1-Instale a extensão Live Server.
     2-Clique com o botão direito no arquivo index.html.
     3-Selecione "Open with Live Server".
+
+
+Link do GitHub Pages: https://rafael-setragni.github.io/Front-End_Projeto-Integrador/
+Data de publicação: 19/10/2025
+![imagem do git pages](image-gitpages.png)
