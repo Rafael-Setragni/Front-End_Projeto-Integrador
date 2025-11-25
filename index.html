@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT-56</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/scriptCarrosel.js" defer></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+    <script src="js/scriptCarrosel.min.js" defer></script>
 </head>
 
 <body>
@@ -15,9 +15,9 @@
     <main>
         <div class="carrossel" id="carrossel">
             <div class="slides" id="slides">
-                <img src="img/img-carrossel-1.jpg" alt="carrossel-1">
-                <img src="img/img-carrossel-2.jpg" alt="carrossel-2">
-                <img src="img/img-carrossel-3.jpg" alt="carrossel-3">
+                <img src="img/img-carrossel-1.webp" alt="carrossel-1" loading="lazy">
+                <img src="img/img-carrossel-2.webp" alt="carrossel-2" loading="lazy">
+                <img src="img/img-carrossel-3.webp" alt="carrossel-3" loading="lazy">
             </div>
 
             <button class="anterior" id="anterior">⟨</button>
@@ -35,25 +35,25 @@
 
             <div class="grupo-de-cards">
                 <div class="card">
-                    <img src="img/img-card-1.png" alt="imagem-card-1">
+                    <img src="img/img-card-1.webp" alt="imagem-card-1" loading="lazy">
                     <h3>MENSAL</h3>
                     <p>R$: 90,00</p>
                     <button>MATRICULE-SE</button>
                 </div>
                 <div class="card">
-                    <img src="img/img-card-2.png" alt="imagem-card-2">
+                    <img src="img/img-card-2.webp" alt="imagem-card-2" loading="lazy">
                     <h3>TRIMESTRAL</h3>
                     <p>R$: 255,00</p>
                     <button>MATRICULE-SE</button>
                 </div>
                 <div class="card">
-                    <img src="img/img-card-3.png" alt="imagem-card-3">
+                    <img src="img/img-card-3.webp" alt="imagem-card-3" loading="lazy">
                     <h3>SEMESTRAL</h3>
                     <p>R$: 480,00</p>
                     <button>MATRICULE-SE</button>
                 </div>
                 <div class="card">
-                    <img src="img/img-cards-4.png" alt="imagem-card-4">
+                    <img src="img/img-cards-4.webp" alt="imagem-card-4" loading="lazy">
                     <h3>ANUAL</h3>
                     <p>R$: 840,00</p>
                     <button>MATRICULE-SE</button>
@@ -63,7 +63,7 @@
     </main>
     <div id="footer-container"></div>
 
-    <script src="js/componentes.js"></script>
+    <script src="js/componentes.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             carregarComponente('componentes/header.html', '#header-container');

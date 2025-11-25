@@ -19,6 +19,7 @@ Link figma:https://www.figma.com/design/Oyn20QzgaKoFdLwanMJH4J/Sem-t%C3%ADtulo?n
 
 Tecnologias utilizadas: HTML5, CSS3, JavaScript
 
+Estrutura de pastas:
 FRONT-END_PRJETO-INTEGRADOR{
     componentes{
         footer.html(arquivo HTML contendo o codigo do footer)
@@ -32,103 +33,92 @@ FRONT-END_PRJETO-INTEGRADOR{
         (imagens usadas no site)
     }
     js{
-        compo
+        componentes.js(arquivo JS com codigo de reaproveitamento de componentes)
+        scriptCarrosel.js(arquivo JS com codigo de carrosel de imagens)
+        scriptMensagemBox.js(arquivo JS com codigo de mensagem após o preenchimento do formulario da pagina contato)
+        scriptSexo.js(arquivo JS com codigo para a escolha do sexo no formulario da pagina contato)
+    }
+    rubrica{
+        (rubrica)
     }
     
-    Index.html
-
-    Sobre.html
-
-    Contato.html
-
-    Styles.css
-
+    index.html(arquivo HTML com codigo da pagina inicial)
+    sobre.html(arquivo HTML com codigo da pagina sobre)
+    sontato.html(arquivo HTML com codigo da pagina contato)
 }
 
-Etapas realizadas (com datas e responsáveis):
+Resumo das três partes do projeto:
+Parte 1:
+    ⦁	Confecção do protótipo de alta fidelidade(figma)
+    Responsaveis: Juan Victor da Silva Mota e Rafael Setragni
+    Data: 20/10/2025
 
-⦁	Confecção do protótipo de alta fidelidade(figma)
-Responsaveis: Juan Victor da Silva Mota e Rafael Setragni
-Data: 20/10/2025
+    ⦁	Relatorio:
+    Responsavel: Juan Victor da Silva Mota
+    Data: 20/10/2025
 
-⦁	Relatorio:
-Responsavel: Juan Victor da Silva Mota
-Data: 20/10/2025
-
-⦁	Desenvolvimento das paginas html e css:
-Responsavel: Rafael Setragni
-Data: 20/10/2025
-
-
-
-Justificativas de desing:
-
-⦁	Paleta de cores: 
-
-⦁	Azul (0060C0):
-Utilizado no header( barra de navegação ) e footer ( rodapé );
-
-⦁	Azul(0080FF):
-Utilizado em cards na pagina index.html, na caixa de texto na pagina sobre.html, no formulário na pagina contato.html e em botões;
-
-⦁	Branco (FFFFFF):
-Utilizado em no background do body, na barra de navegação, em elementos textuais;
-
-⦁	Preto (000000):
-Utilizado em elementos textuais e em botões; 
-
-A paleta de cores foi selecionada de acordo com as cores do próprio CT, foram utilizadas poucas cores porem com um alto contraste entre elas, garantindo a acessibilidade mínima para pessoas daltônicas.
-
-A fonte selecionada foi a Jersey 25, pois se agarrou bem a estética das paginas.
-
-Fora utilizados dois ícones do whatsapp e instagram no footer para garantir acesso as redes sociais do CT para entrar em contato.
-
-O layout geral da pagina foi definida com base em pesquisas e inspirações com outros sites de academia.
-
-Próximos passos: Adicionar novas paginas(como a pagina de matricula e pagamento), dedicar mais tempo a acessibilidade e responsividade com uso de media cares e detalhamento das paginas que já possuímos.
-
-Utilizamos o JavaScript para tornar possível a interação do usuário com o site. Nele, criamos um carrossel de imagens na página Home, uma mensagem de êxito quando o usuário completa o cadastro e também uma imagem que muda conforme o sexo escolhido pelo usuário.
-A interação mais interessante de criar foi a mensagem que aparece ao concluir o cadastro, pois foi possível fazer uso de uma div que só é exibida no site quando a ação é finalizada.Foi possível aprender que o DOM permite manipular dinamicamente os elementos da página, tornando o site mais interativo e responsivo às ações do usuário.
+    ⦁	Desenvolvimento das paginas html e css:
+    Responsavel: Rafael Setragni
+    Data: 20/10/2025
 
 
-## 1. Revisão e Diagnóstico do Projeto Atual
+    Justificativas de desing:
 
-Ao observar o comportamento da pagina e sua reponsividade foi notado que o layout da pagina começa a ser comprometido em dispositivos mobile e tablets. No modelo de tablet pode se notar o deslocamento de alguns elementos da pagina,já no mobile elementos como: header, cards, foter e formulario ficam completamente desalinhados.
+    ⦁	Paleta de cores: 
 
-O unico elemento que funcionava bem na parte 1 do projeto era a box de texto com imagens na pagina sobre.html.
+    ⦁	Azul (0060C0):
+    Utilizado no header( barra de navegação ) e footer ( rodapé );
 
-Os elementos que mais se repetem nas paginas são: Header e Footer.
+    ⦁	Azul(0080FF):
+    Utilizado em cards na pagina index.html, na caixa de texto na pagina sobre.html, no formulário na pagina contato.html e em botões;
 
-## 4. Consolidação de Acessibilidade
+    ⦁	Branco (FFFFFF):
+    Utilizado em no background do body, na barra de navegação, em elementos textuais;
 
-## 4.1. Checklist de Acessibilidade
+    ⦁	Preto (000000):
+    Utilizado em elementos textuais e em botões; 
 
-Verifiquem e implementem os seguintes recursos:
+    A paleta de cores foi selecionada de acordo com as cores do próprio CT, foram utilizadas poucas cores porem com um alto contraste entre elas, garantindo a acessibilidade mínima para pessoas daltônicas.
 
-**HTML Semântico:**
+    A fonte selecionada foi a Jersey 25, pois se agarrou bem a estética das paginas.
 
-- [X]  Usam tags semânticas (**`<header>`**, **`<nav>`**, **`<main>`**, **`<section>`**, **`<article>`**, **`<footer>`**)?
-- [ ]  Cada página tem apenas um **`<h1>`** (título principal)?
-- [X]  Os títulos seguem hierarquia lógica (h1 → h2 → h3)?
+Parte 2:
+    Na segunda parte do projeto foram acrescentados arquivos JavaScript para tornar possível a interação do usuário com o site.
 
-**Imagens e Multimídia:**
+    ⦁   scriptCarrossel.js implementa um carrossel com três imagens para a página inicial.
 
-- [X]  Todas as imagens têm atributo **`alt`** com descrição clara?
-- [X]  Imagens decorativas têm **`alt=""`** (vazio)?
+    ⦁   scriptMensagemBox.js implementa uma mensagem de êxito quando o usuário completa o cadastro na página de contato.
 
-**Formulários:**
+    ⦁   scriptSexo.js implementa uma imagem que muda conforme o sexo escolhido pelo usuário na página de contato.
 
-- [ ]  Todos os campos têm **`<label>`** associado via atributo **`for`**?
-- [X]  Campos obrigatórios estão marcados (atributo **`required`** ou indicação visual)?
-- [ ]  Placeholders não substituem labels?
+Parte 3:
+    Na terceira parte do projeto foi acrescentado o arquivo componentes.js para que seja feita a reutilização dos códigos presentes na pasta componentes.
 
-**Navegação por Teclado:**
+    Foi adicionado no arquivo sobre.html o Google Maps Embed para que os usuários possam visualizar o endereço real da academia.
 
-- [X]  Todos os links e botões são acessíveis via Tab?
-- [ ]  O foco está visível (estilo **`:focus`** no CSS)?
-- [ ]  Há um skip link ("Pular para o conteúdo principal")?
+    Foram utilizados dois ícones — WhatsApp e Instagram — no footer para garantir o acesso às redes sociais do CT para entrar em contato.
 
-**Contraste e Legibilidade:**
+Instruções de como rodar o projeto localmente:
+    1. Clonar o repositório
+    Utilize o comando abaixo para clonar o repositório diretamente do GitHub:
+    Comando: git clone https://github.com/Rafael-Setragni/Front-End_Projeto-Integrador.git
 
-- [X]  Texto e fundo têm contraste adequado (mínimo 4.5:1)?
-- [ ]  Tamanho de fonte é legível (mínimo 16px para texto corrido)?
+    2. Acessar o diretório do projeto
+    Após a clonagem, entre na pasta do projeto:
+    Comando: cd Front-End_Projeto-Integrador
+
+    3. Abrir o projeto em um editor de código (opcional)
+    Caso deseje editar ou analisar os arquivos, abra o projeto em seu editor de preferência, como o Visual Studio Code:
+    Comando: code .
+
+    4. Executar o projeto
+    Este é um projeto desenvolvido utilizando HTML, CSS e JavaScript. Portanto, não é necessário instalar dependências ou configurar ambientes adicionais.
+    Para visualizar o site:
+    1-Localize o arquivo index.html na pasta do projeto.
+    2-Abra o arquivo diretamente no navegador de sua preferência.
+
+    (Opcional) Utilizando um servidor local
+    Para uma navegação mais fluida, recomenda-se utilizar um servidor local. Caso utilize o Visual Studio Code:
+    1-Instale a extensão Live Server.
+    2-Clique com o botão direito no arquivo index.html.
+    3-Selecione "Open with Live Server".
